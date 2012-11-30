@@ -85,6 +85,12 @@ GIT
       activesupport (>= 3.0)
       sprockets (~> 2.8)
 
+PATH
+  remote: ../../edge/mac_generators
+  specs:
+    mac_generators (0.0.1)
+      rails (~> 4.0.0.beta)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -144,6 +150,7 @@ DEPENDENCIES
   coffee-rails!
   journey!
   jquery-rails
+  mac_generators!
   pg
   rails!
   sass-rails!
