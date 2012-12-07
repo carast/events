@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  helper_method :current_identity
+  helper_method :current_identity, :identity_logged?
 
 private
   def current_identity
@@ -11,6 +11,6 @@ private
   end
 
   def identity_logged?
-    current_identity.nil?
+    !current_identity.nil?
   end
 end
