@@ -44,5 +44,6 @@ end
 # To use debugger
 # gem 'debugger'
 
+gem 'haml-rails'
 gem "bcrypt-ruby", require: "bcrypt"
 gem "bootstrap-sass"
