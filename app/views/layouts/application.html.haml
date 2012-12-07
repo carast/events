@@ -9,18 +9,18 @@
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
-          = link_to 'Eventos', root_path, class: 'brand'
+          = link_to t(:app_name), root_path, class: 'brand'
           .navbar-content
             %ul.nav
               %li.active
-                = link_to 'Inicio', root_path
+                = link_to t(:home), root_path
           .navbar-content
             %ul.nav.pull-right
               -if identity_logged?
-                %li=link_to "Hola #{current_identity.email}"
-                %li= link_to 'Cerrar session', log_out_path
+                %li=link_to t(:hello, user: current_identity.email)
+                %li= link_to t(:log_out), log_out_path
               - else
-                %li=link_to "Registro", sign_up_path
-                %li= link_to 'Iniciar session', log_in_path
+                %li=link_to t(:sign_up), sign_up_path
+                %li= link_to t(:log_in), log_in_path
     .container.content
       = yield

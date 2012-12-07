@@ -1,0 +1,20 @@
+es:
+
+  app_name: 'Eventos'
+  home: 'Inicio'
+  sign_up: 'Registro'
+  log_in: 'Iniciar session'
+
+  sessions:
+    new:
+      log_in: 'Iniciar session'
+    create:
+      invalid_credentials: 'Tus credenciales son invalidas'
+      logged_in: 'Bienvenido'
+    destroy:
+      logged_out: 'Hasta luego'
+    identities:
+      new:
+        create: 'Crear cuenta'
+      create:
+        sign_up: 'Bienvenido a tu nueva cuenta'
