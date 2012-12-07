@@ -1,3 +1,30 @@
 .content {
   margin-top: 60px;
 }
+
+.alert {
+  strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+}
+
+form {
+  .errors {
+    input {
+      border: 1px solid $red;
+    }
+
+    label {
+      color: $red;
+    }
+
+    .help-inline {
+      color: $red;
+    }
+  }
+}

@@ -1,9 +1,26 @@
 es:
 
-  app_name: 'Eventos'
-  home: 'Inicio'
-  sign_up: 'Registro'
-  log_in: 'Iniciar session'
+  invalid_form: 'Los datos de la forma son invalidos'
+  correct_errors: 'Por favor corrija los errores indicados'
+
+  shared:
+    nav_bar:
+      app_name: 'Eventos'
+      home: 'Inicio'
+      sign_up: 'Registro'
+      log_in: 'Iniciar session'
+
+  home:
+    index:
+      welcome_message: 'Bienvenido a Eventos'
+      introduction: 'Descubre que es lo que estan pasando atu alrededor'
+
+  identities:
+    new:
+      create_account: 'Crea tu cuenta'
+      create_message: 'Con ella podras visitar los eventos a los que asistiras y podras tambien crear tus propios eventos'
+      create: 'Registrase'
+      cancel: 'Cancelar'
 
   sessions:
     new:
@@ -13,8 +30,21 @@ es:
       logged_in: 'Bienvenido'
     destroy:
       logged_out: 'Hasta luego'
+
     identities:
       new:
         create: 'Crear cuenta'
+
       create:
         sign_up: 'Bienvenido a tu nueva cuenta'
+
+
+  activerecord:
+    errors:
+      messages:
+        blank: 'es requerido'
+
+      models:
+        identity:
+          attributes:
+            blank: 'es requerido'
