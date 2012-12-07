@@ -18,3 +18,4 @@
 *.swo
 *.swp
 *.un~
+.sass-cache
