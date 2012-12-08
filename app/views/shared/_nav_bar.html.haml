@@ -8,7 +8,7 @@
             = link_to t('.home'), root_path
           - if identity_logged?
             %li
-              = link_to t('.create_event'), '#'
+              = link_to t('.create_event'), new_event_path
       .navbar-content
         %ul.nav.pull-right
           -if identity_logged?

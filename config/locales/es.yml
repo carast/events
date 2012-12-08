@@ -39,22 +39,58 @@ es:
       create:
         sign_up: 'Bienvenido a tu nueva cuenta'
 
+  events:
+    new:
+      create: 'Crear evento'
+      create_event: 'Crea tu evento'
+      create_message: 'Proporciona los datos que se te piden'
 
   attributes:
     email: 'Correo electronico'
     password: 'Clave'
     password_confirmation: 'Confirmacion de clave'
 
+    name: 'Nombre'
+    description: 'Descripcion'
+    start_date: 'Inicia'
+    end_date: 'Termina'
+    location: 'Ubicacion'
+    organizer: 'Organiza'
+
   activerecord:
     models:
-    attributes:
       identity: 'Usuario'
+    attributes:
 
     errors:
       messages:
         blank: 'es requerido'
 
-      models:
-        identity:
-          attributes:
-            blank: 'es requerido'
+  date:
+    order:
+      - :day
+      - :month
+      - :year
+    day_names:
+      - domingo
+      - lunes
+      - martes
+      - miércoles
+      - jueves
+      - viernes
+      - sábado
+
+    month_names:
+      -
+      - enero
+      - febrero
+      - marzo
+      - abril
+      - mayo
+      - junio
+      - julio
+      - agosto
+      - septiembre
+      - octubre
+      - noviembre
+      - diciembre
