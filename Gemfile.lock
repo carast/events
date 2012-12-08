@@ -85,6 +85,13 @@ GIT
       activesupport (>= 3.0)
       sprockets (~> 2.8)
 
+GIT
+  remote: git@github.com:mariochavez/quiet_assets.git
+  revision: fd2ea5bfac9df4bff8dcd63963e30617e9bd6d31
+  specs:
+    quiet_assets (1.0.1)
+      railties (>= 3.1, < 5.0)
+
 PATH
   remote: ../../edge/mac_generators
   specs:
@@ -163,6 +170,7 @@ DEPENDENCIES
   jquery-rails
   mac_generators!
   pg
+  quiet_assets!
   rails!
   sass-rails!
   sprockets-rails!

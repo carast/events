@@ -44,6 +44,7 @@ end
 # To use debugger
 # gem 'debugger'
 
+gem 'quiet_assets', git: 'git@github.com:mariochavez/quiet_assets.git'
 gem 'haml-rails'
 gem "bcrypt-ruby", require: "bcrypt"
 gem "bootstrap-sass"

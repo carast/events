@@ -8,6 +8,7 @@ class IdentitiesController < ApplicationController
     @identity = Identity.new identity_params
 
     if @identity.save
+      self.current_identity = @identity.id
       redirect_to root_url, notice: t('.sign_up')
     else
       render :new

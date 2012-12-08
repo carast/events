@@ -10,6 +10,10 @@ private
     @current_identity ||= Identity.find(session[:identity_id]) if session[:identity_id]
   end
 
+  def current_identity=(identity_id)
+    session[:identity_id] = identity_id
+  end
+
   def identity_logged?
     !current_identity.nil?
   end

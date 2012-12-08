@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     identity = Identity.authenticate params[:email], params[:password]
 
     if identity
-      session[:identity_id] = identity.id
+      self.current_identity = identity.id
       return redirect_to root_url, notice: t('.logged_in')
     end
     flash.now.alert = t('.invalid_credentials')
@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session[:identity_id] = nil
+    self.current_identity = nil
     redirect_to root_url, notice: t('.logged_out')
   end
 end
