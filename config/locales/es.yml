@@ -39,7 +39,16 @@ es:
         sign_up: 'Bienvenido a tu nueva cuenta'
 
 
+  attributes:
+    email: 'Correo electronico'
+    password: 'Clave'
+    password_confirmation: 'Confirmacion de clave'
+
   activerecord:
+    models:
+    attributes:
+      identity: 'Usuario'
+
     errors:
       messages:
         blank: 'es requerido'
