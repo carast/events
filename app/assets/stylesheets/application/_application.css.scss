@@ -14,11 +14,7 @@
 }
 
 form {
-  .errors {
-    input {
-      border: 1px solid $red;
-    }
-
+  .error {
     label {
       color: $red;
     }
