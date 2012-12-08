@@ -9,6 +9,7 @@ es:
       home: 'Inicio'
       sign_up: 'Registro'
       log_in: 'Iniciar session'
+      create_event: 'Crear evento'
 
   home:
     index:
